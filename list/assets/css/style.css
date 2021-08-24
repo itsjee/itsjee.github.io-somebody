@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --poppins: 'Poppins';
+  --blue: royalblue;
+  --silver: #efefef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+section .heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section .heading h2 {
+  font-family: var(--poppins);
+  font-size: 33px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+section .heading p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+section .form {
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .form .field {
+  position: relative;
+  width: 70%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  box-shadow:  inset -10px -10px 15px rgba(255,255,255,0.55),
+    inset 10px 10px 15px rgba(70,70,70,0.12);
+  background: #efefef;
+}
+
+section .form .field::placeholder {
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+section .form .button {
+  width: 30%;
+  padding: 15px;
+  position: relative;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+  cursor: pointer;
+  background: var(--blue);
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  transition: 0.3s ease-in;
+}
+
+section .form .button:hover {
+  background: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.container {
+  position: relative;
+  width: 55%;
+  margin: 20px auto;
+}
+
+.container .list {
+  position: relative;
+  width: 100%;
+  padding: 12px 15px;
+  background: #efefef;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.container .list .list-content {
+  position: relative;
+  width: 86%;
+  margin-right: 5px;
+}
+
+.container .list .list-content span {
+  font-family: var(--poppins);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.container .list .list-icon {
+  position: relative;
+  width: 14%;
+}
+
+.container .list .list-icon i {
+  margin: 0 5px;
+  font-size: 18px;
+  transition: 0.3s ease-in all;
+  cursor: pointer;
+}
+
+.container .list .list-icon i:first-child {
+  color: green;
+}
+
+.container .list .list-icon i:last-child {
+  color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  section {
+    width: 100%;
+  }
+  
+  section .heading {
+    width: 80%;
+  }
+  
+  .container {
+    width: 90%;
+  }
+  
+  .container .list .list-content {
+    width: 80%;
+  }
+  
+  .container .list .list-content span {
+    font-size: 13px;
+  }
+  
+  .container .list .list-icon {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+  }
+  
+}
