@@ -2,7 +2,11 @@ html {
   box-sizing: border-box;
 }
 
-body {
+body 
+{ background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__6Mr4GUl2j8mLUNxnzE6od3lV4sgkjouNw&usqp=CAU');
+	color: #fff;
+}
+{
   margin: 0;
   font-family: "Work Sans", sans-serif;
 }
